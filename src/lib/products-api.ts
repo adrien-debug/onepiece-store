@@ -59,6 +59,7 @@ const SORT_MAP: Record<ProductSort, { column: string; ascending: boolean }> = {
   price_desc: { column: 'price_cents', ascending: false },
   new: { column: 'created_at', ascending: false },
   popular: { column: 'created_at', ascending: false },
+  random: { column: 'id', ascending: true },
 };
 
 export async function fetchProducts(params: FetchProductsParams): Promise<ProductListResponse> {
